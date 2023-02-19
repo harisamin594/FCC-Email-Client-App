@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/folderfrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FolderFrag">
+
+    <Button
+        android:id="@+id/inboxbutn"
+        android:layout_width="288dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="153dp"
+        android:background="@drawable/custom_button2"
+        android:text="INBOX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sendbutn"
+        android:layout_width="288dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="153dp"
+        android:background="@drawable/custom_button2"
+        android:text="SENT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/draftbutn" />
+
+    <Button
+        android:id="@+id/trashbutn"
+        android:layout_width="288dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="153dp"
+        android:background="@drawable/custom_button2"
+        android:text="TRASH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendbutn" />
+
+    <Button
+        android:id="@+id/spambutn"
+        android:layout_width="288dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/custom_button2"
+        android:text="SPAM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trashbutn" />
+
+    <Button
+        android:id="@+id/draftbutn"
+        android:layout_width="288dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="153dp"
+        android:background="@drawable/custom_button2"
+        android:text="DRAFT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inboxbutn" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="108dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/inbox_icon"
+        app:layout_constraintEnd_toStartOf="@+id/inboxbutn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/draft_icon"
+        app:layout_constraintEnd_toStartOf="@+id/draftbutn"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inboxbutn" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="96dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/sent_icon"
+        app:layout_constraintEnd_toStartOf="@+id/sendbutn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="82dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/trash_icon"
+        app:layout_constraintEnd_toStartOf="@+id/trashbutn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/spam_icon"
+        app:layout_constraintEnd_toStartOf="@+id/spambutn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

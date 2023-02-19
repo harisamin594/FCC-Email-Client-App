@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/email_navigation"
+    app:startDestination="@id/folderFrag">
+    <fragment
+        android:id="@+id/folderFrag"
+        android:name="com.example.fccemailclient.FolderFrag"
+        android:label="folder_frag"
+        tools:layout="@layout/folder_frag" >
+        <action
+            android:id="@+id/action_folderFrag_to_inboxFrag"
+            app:destination="@id/inboxFrag" />
+        <action
+            android:id="@+id/action_folderFrag_to_sentFrags"
+            app:destination="@id/sentFrags" />
+    </fragment>
+    <fragment
+        android:id="@+id/inboxFrag"
+        android:name="com.example.fccemailclient.InboxFrag"
+        android:label="inbox_frag"
+        tools:layout="@layout/inbox_frag" >
+        <action
+            android:id="@+id/action_inboxFrag_to_email"
+            app:destination="@id/email" />
+        <action
+            android:id="@+id/action_inboxFrag_to_viewMail"
+            app:destination="@id/viewMail" />
+        <action
+            android:id="@+id/action_inboxFrag_to_folderFrag"
+            app:destination="@id/folderFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/email"
+        android:name="com.example.fccemailclient.Email"
+        android:label="Email" >
+        <action
+            android:id="@+id/action_email_to_folderFrag"
+            app:destination="@id/folderFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewMail"
+        android:name="com.example.fccemailclient.ViewMail"
+        android:label="ViewMail" />
+    <fragment
+        android:id="@+id/sentFrags"
+        android:name="com.example.fccemailclient.SentFrags"
+        android:label="SentFrags" >
+        <action
+            android:id="@+id/action_sentFrags_to_folderFrag2"
+            app:destination="@id/folderFrag" />
+    </fragment>
+</navigation>

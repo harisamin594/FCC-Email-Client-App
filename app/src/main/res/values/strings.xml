@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FCC Email Client</string>
+    <string name="home_title">FCC Email App</string>
+    <string name="userName">Username</string>
+    <string name="password">password</string>
+    <string name="Register">Register</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="Email">email</string>
+    <string name="inbox">Inbox</string>
+    <string name="Draft">Draft</string>
+    <string name="Sent">Sent</string>
+    <string name="Trash">Trash</string>
+    <string name="Spam">Spam</string>
+    <string name="Reply">Reply</string>
+    <string name="Send">Send</string>
+    <string name="write_email">Compose email</string>
+    <string name="Logout">logout</string>
+    <string name="Markread">Mark as read</string>
+    <string name="Delete">Delete</string>
+    <string name="Sendtospam">Send to spam</string>
+    <string name="Email_sent">Email sent</string>
+    <string name="Saveddraft">Saved in draft</string>
+    <string name="Login">Login</string>
+    <string name="Emptycredentials">Empty credentials!</string>
+    <string name="to">"to"</string>
+    <string name="subject">"subject"</string>
+
+    <string-array name="spinner_strings">
+        <item>Pic 1</item>
+        <item>Pic 2</item>
+        <item>Pic 3</item>
+        <item>Pic 4</item>
+    </string-array>
+</resources>
